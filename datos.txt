@@ -1,0 +1,6 @@
+var Registro1="Administrador de sistemas";
+var Registro2="Programador en Java";
+var Registro3="Content Manager";
+var Registro4="Técnico Help Desk";
+var Enlace="empresa.html";
+alert('Hola que bien');

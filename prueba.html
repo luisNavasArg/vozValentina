@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+   <meta charset="utf-8">
+  <script src="js/datos.js"></script>
+  <script type="text/javascript">
+   function cargarDatos(){
+    document.getElementById("Campo1").innerText=Registro1;
+    document.getElementById("Campo2").innerText=Registro2;
+    document.getElementById("Campo3").innerText=Registro3;
+    document.getElementById("Campo4").innerText=Registro4;
+    document.getElementById("CampoEnlace").href=Enlace;
+   }
+  </script>
+ </head>
+ <body onload="cargarDatos()">
+  <table>
+   <tr>
+    <td colspan="3" id="Campo1"></td>
+   </tr>
+   <tr>
+    <td id="Campo2"></td>
+   </tr>
+   <tr>
+    <td id="Campo3"></td>
+   </tr>
+   <tr>
+    <td id="Campo4"></td>
+   </tr>
+  </table>
+  <br />
+  <a id="CampoEnlace">Volver a la página anterior</a>
+ </body>
+
+</html>
