@@ -2,16 +2,17 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<link rel="stylesheet" href="estilo.css">
+			<link rel="stylesheet" href="css/estilos.css">
 			<script src="js/apiVtina.js" charset="utf-8"></script>
 		</script>
 		</head>
-		<body >
-
-
-
-  <form action="#">
-    <input type="text" id="q" name="q" size=60>
-    <input type="button" value="Hablar" onclick="hablar();saveTextAsFile();">
-		<select id="voiceSelect" onchange="hablar()"></select>
-  </form>
+		<body onload="agregarItem();">
+			<form action="#">
+	    	<input type="text" id="q" name="q" size=60>
+	    	<input type="button" value="Hablar" onclick="hablar('q');">
+				<input id="boto"  type="button" value="Guardar Información" onclick="guardarTexto();">
+				<select id="voiceSelect" onchange="hablar('voiceSelect');"></select>
+  		</form>
+			<div  ></div>
+	</html>
+</body>

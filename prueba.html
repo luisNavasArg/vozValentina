@@ -31,6 +31,29 @@
   </table>
   <br />
   <a id="CampoEnlace">Volver a la página anterior</a>
+<script type="text/javascript">
+
+
+  function mostrarprecio() {
+  var pizza = document.getElementById("pizza"),
+     precio = document.getElementById("precio");
+alert(pizza.value);
+}
+
+
+
+</script>
+<form>
+  Seleccione la pizza:
+  <select id="pizza" onchange="mostrarprecio()">
+    <option value="0"></option>
+    <option value="15000">Queso</option>
+    <option value="18000">Jamon</option>
+    <option value="22000">Jamon y Queso</option>
+    <option value="30000">Especial</option>
+  </select>
+  <input type="text" id="precio" />
+</form>
  </body>
 
 </html>
