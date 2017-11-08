@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', inicializar);
 var frases = new Array();
 function inicializar(){
-/*  var boton = document.getElementById('boto');
- boton.style.backgroundColor="blue";
+ var boton = document.getElementById('boto');
+ boton.style.backgroundColor="#ea80ef";
  boton.style.Color="black";
  boton.style.fontSize=15;
  boton.style.boxShadow="4px 3px 5px black";
  boton.style.borderRadius=30 + "px";
  boton.style.padding=10 + "px";
- boton.style.border = 0 + "px";*/
+ boton.style.border = 0 + "px";
 }
 var lista= [];
 function hablar(id){
