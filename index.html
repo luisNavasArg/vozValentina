@@ -9,10 +9,10 @@
 		<body onload="agregarItem();">
 			<form action="#">
 	    	<input type="text" id="q" name="q" size=60>
-	    	<input type="button" value="Hablar" onclick="hablar('q');">
-				<input id="boto"  type="button" value="Guardar Información" onclick="guardarTexto();">
-				<select id="voiceSelect" onchange="hablar('voiceSelect');"></select>
+	    	<input type="button" id="botonHablar" value="Hablar" onclick="hablar('q');" >
+		<select id="voiceSelect" onchange="hablar('voiceSelect');"></select>
   		</form>
+		<input id="boto"  type="button" value="Guardar Información" onclick="guardarTexto();">
 			<div  ></div>
 	</html>
 </body>
