@@ -9,6 +9,9 @@ function inicializar(){
  boton.style.borderRadius=30 + "px";
  boton.style.padding=10 + "px";
  boton.style.border = 0 + "px";
+ 
+ var botonHablar =document.getElementById('botonHablar');
+
 }
 var lista= [];
 function hablar(id){
