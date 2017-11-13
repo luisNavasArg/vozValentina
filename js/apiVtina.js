@@ -11,8 +11,31 @@ function inicializar(){
  boton.style.border = 0 + "px";
  
  var botonHablar =document.getElementById('botonHablar');
+ frasesNuevas();
+}
+
+function frasesNuevas(){
+var frasesNuevas = ["Hola", "Chau","Vieja","Abuela","Me llamo Valentina","No me jodas!","Jajaja!",
+"Jazmín","Luna","Tengo sed.","Estoy enamorada.","Tengo hambre","Tengo sueño","Me tengo que bañar",
+"bañame de una vez","quiero estar sola","Quiero merendar","Jazmín no me jodas",
+"necesito que me escuchen y me lean","Escuchame","Permiso","Por favor","Gracias",
+"Mira que te puteo","Sos insoportable!","La concha de la lora","Quiero mi psicóloga!",
+"y mi asistente personal?"];
+
+
+var voiceSelect = document.getElementById('voiceSelect');
+    for (var index = 0; index < frasesNuevas.length; index++) {
+        var element = frasesNuevas[index];
+        var option = document.createElement('option');
+        option.textContent = element;
+        voiceSelect.appendChild(option); 
+    }
+
 
 }
+
+
+
 var lista= [];
 function hablar(id){
     var text = document.getElementById(id).value;
